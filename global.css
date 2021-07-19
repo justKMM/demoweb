@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.max-width {
+    max-width: 1500px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+
+.max-width .title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.max-width .orange-bar {
+    width: 100px;
+    height: 2px;
+    background-color: orange;
+    margin-top: 30px;
+}
+
+
+
+.part1-menu {
+    background-image: url('./image/hero.jpg');
+    height: 700px;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.opacity {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    /*z-index: 2;*/
+    position: absolute;
+}
+
+
+
+nav {
+    margin-left: 10%;
+}
+
+nav .max-width {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a{
+    position: relative;
+	display: inline-block;
+	padding: 0 30px;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: -.5px;
+	text-decoration: none;
+}
+
+nav .menu a:hover{
+    color: orange;
+}
+
+nav .menu a:after{
+    content: "";
+    display: block;
+    position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 3px;
+	background-color: #ffe800;
+}
+
+nav .menu a:hover:after{
+    width: 100%;
+}
+
+
+
+.max-width .logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.max-width .menu {
+    width: 800px;
+    
+    line-height: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.max-width .menu a {
+    color: white;
+    font-size: 20px;
+}
+
+
+.content-menu {
+    width: 700px;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 8%;
+    color: white;
+    position: relative;
+}
+
+.content-menu .text p {
+    font-size: 50px;
+    font-weight: 150;
+    line-height: 60px;
+}
+
+.content-menu .multi-button {
+    width: 320px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content-menu .multi-button button {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: none;
+    border: solid 2px orange;
+    border-radius: 30px;
+}
+
+.hover_button {
+    background-color: rgb(238, 159, 13);
+    color: white;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 120px;
+}
+
+.hover_button:hover {
+    background-color: chocolate;
+    color: white;
+}
+
+.hover_button:active {
+    background-color: rgb(138, 70, 22);
+    color: cornsilk;
+}
+
+
+
+.part2-banner .max-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part2-banner .max-width .about {
+    margin-top: 30px;
+}
+
+.max-width .about p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+
+
+.part2-banner .max-width .content-boxes {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.content-boxes .content-box {
+    width: 200px;
+    height: fit-content;
+}
+
+.content-boxes .content-box i {
+    color: orange;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.content-boxes .content-box p {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.content-boxes .content-box .title {
+    font-size: 20px;
+    text-align: left;
+    line-height: 40px;
+}
+
+
+
+.banner {
+    width: 100%;
+    margin-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.banner .banner-image {
+    width: 25%;
+    height: 275x;
+}
+
+.banner .banner-image img {
+    width: 100%;
+    height: 275px;
+    border: none;
+    display: block;
+}
+
+
+
+
+.part3-ad {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(240, 240, 240);
+}
+
+.part3-ad .max-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part3-ad .ad {
+    width: 800px;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.part3-ad .ad img {
+    width: 200px;
+    height: 410px;
+}
+
+.ad .steps {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.steps .step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.steps .step i {
+    font-size: 50px;
+    color: orange;
+}
+
+.steps .step p {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.steps .download img {
+    width: 160px;
+    height: 50px;
+}
+
+
+
+.part4-feedback {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part4-feedback .max-width {
+    width: 50%;
+}
+
+.part4-feedback .max-width .title {
+    font-size: 35px;
+}
+
+.part4-feedback .max-width .orange-bar {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+form {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form .label-area {
+    width: 100%;
+}
+
+form .label-area p {
+    line-height: 40px;
+}
+
+form .input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area input {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.input-area select {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.input-area .check-box {
+    display: flex;
+}
+
+
+.input-area .check-box p {
+    line-height: 30px;
+    display: block;
+    text-align: start
+}
+
+.input-area button {
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.part5-footer {
+    background-color: black;
+    width: 100%;
+}
+
+.part5-footer .max-width {
+    display: flex;
+    flex-direction: column;
+}
+
+.part5-footer .max-width .info-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-top .menu {
+    width: 50%;
+}
+
+.info-top .menu a {
+    color: rgb(192, 191, 191);
+    font-weight: 400;
+}
+
+.part5-footer .max-width .icons {
+    padding-top: 17px;
+    color: rgb(192, 191, 191);
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
